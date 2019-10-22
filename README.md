@@ -1,4 +1,3 @@
-An absolute bare-bones web app.
+# Resolucao Lista 01
 
-Created from templates made available by Stagehand under a BSD-style
-[license](https://github.com/dart-lang/stagehand/blob/master/LICENSE).
+Resoluções das questões da lista 01 da cadeira de FLutter 2019.2 do ifma
