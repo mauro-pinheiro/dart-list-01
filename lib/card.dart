@@ -12,14 +12,15 @@ class Card {
   Text _text;
   Stats _stats;
 
-  Card() {
-    _image = Image("img1.jpg");
-    _text = Text("4 days ago", "Post One",
-        "Texto aleatório grande pra caramba só pra ter algo escrito.");
-    _stats = Stats("4m", "5123", "32");
+  Card(String image, String date, String titulo, String texto, String read,
+      String views, String comments, String id) {
+    _image = Image(image);
+    _text = Text(date, titulo, texto);
+    _stats = Stats(read, views, comments);
 
     _cardDiv = DivElement()
       ..classes.add("card")
+      ..classes.add(id)
       ..append(_image.image)
       ..append(_text.div)
       ..append(_stats.div);

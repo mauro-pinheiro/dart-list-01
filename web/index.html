@@ -10,11 +10,43 @@
       content="https://github.com/dart-lang/stagehand"
     />
     <title>Lista 01 - Dart Newbie</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="css/styles.css" />
     <link rel="icon" href="favicon.ico" />
     <script defer src="main.dart.js"></script>
   </head>
 
   <body>
     <div id="output"></div>
+    <div id="water"><form>
+      <fieldset id="peso">
+        <legend>Quantidade de água para consumir</legend>
+        <p>
+          <label for="cPeso">Peso: </label>
+          <input
+            type="text"
+            name="tPeso"
+            id="cPeso"
+            size="15"
+            maxlength="15"
+            placeholder="Peso em kg"
+          />
+        </p>
+        <p>
+          <label for="cAgua">Quantidade: </label>
+          <input
+            type="text"
+            name="tAgua"
+            id="cAgua"
+            size="15"
+            maxlength="15"
+            placeholder="Quantidade de Água"
+            readonly
+          />
+        </p>
+        <button type="button" name="tCalculate">Calculate</button>
+      </fieldset>
+    </form></div>
+        <a href="water.html">agua</a>
+
+  </body>
 </html>

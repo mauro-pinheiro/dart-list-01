@@ -34,9 +34,9 @@ class Stats {
   Stat _comments;
 
   Stats(String read, String views, String comments) {
-    _read = Stat(read, "read");
-    _views = Stat(views, "views", true);
-    _comments = Stat(comments, "comments");
+    _read = Stat(read, "Lista");
+    _views = Stat(views, "Questão", true);
+    _comments = Stat(comments, "Nível");
 
     _statsDiv = DivElement()
       ..classes.add("card-stats")
