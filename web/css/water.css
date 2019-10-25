@@ -1,0 +1,25 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  background: url("../imagens/background.jpg");
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4ch;
+  color: #333333;
+}
+
+form {
+  background: url("../imagens/img01.jpg");
+  background-size: cover;
+}
+
+form p {
+  display: grid;
+  grid-area: "labels", "templates";
+}
+
+form input {
+  height: 4ch;
+}

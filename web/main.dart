@@ -1,11 +1,10 @@
 import 'dart:html';
-import 'package:dart_list_01/card.dart' as card;
-import 'package:dart_list_01/lista01.dart' as l01;
+import 'package:dart_list_01/card.dart';
 
 void main() {
   var output = querySelector("#output");
-  //output.children.clear();
-  output.append(card.Card(
+  output.children.clear();
+  output.append(Card(
           "imagens/img01.jpg",
           "",
           "Consumir Água",
@@ -14,9 +13,10 @@ void main() {
           "01",
           "Newbie",
           "water")
-      .div);
+      .div
+    ..onClick.listen((event) => window.location.assign("water.html")));
 
-  output.append(card.Card(
+  output.append(Card(
           "imagens/img02.jpg",
           "",
           "Contar Tinta",
@@ -27,7 +27,7 @@ void main() {
           "tinta")
       .div);
 
-      output.append(card.Card(
+  output.append(Card(
           "imagens/img03.jpg",
           "",
           "Aprovado?",
@@ -37,6 +37,4 @@ void main() {
           "Newbie",
           "aluno")
       .div);
-
-      querySelector("water.html#output2").text = "Teste";
 }
